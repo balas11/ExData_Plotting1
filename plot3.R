@@ -1,3 +1,8 @@
+#####
+## Data prepared using shell commands after downloading
+## head -1 household_power_consumption.txt > feb1n2in2007.txt
+## grep '^[01 | 1 | 02 | 2]/[02 | 2]/2007' household_power_consumption.txt >> feb1n2in2007.txt
+###
 ##Load File and create a DateTime variable
 fp <- file.path(getwd(), "data", "feb1n2in2007.txt")
 pcdf <- read.table(fp, header = TRUE, sep = ";", na.strings = "?")
